@@ -1,0 +1,28 @@
+﻿<Window x:Class="HotelManagementSystem.UI.View.Dialog.RoomBookingsDialogWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HotelManagementSystem.UI.View.Dialog"
+             mc:Ignorable="d" 
+             Title="Bookings"
+             Height="280"
+             Width="500"
+             MinHeight="280"
+             MinWidth="500"
+             ShowInTaskbar="False"
+             WindowStartupLocation="CenterOwner">
+    
+    <Grid>
+        <DataGrid ItemsSource="{Binding BookingCollection}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="InDate" Binding="{Binding InDate,StringFormat=d/M/yyyy}"/>
+                <DataGridTextColumn Header="OutDate" Binding="{Binding OutDate,StringFormat=d/M/yyyy}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Visitor.VisitorInfo.Name}"/>
+                <DataGridTextColumn Header="Surname" Binding="{Binding Visitor.VisitorInfo.Surname}"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Visitor.VisitorInfo.Email}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

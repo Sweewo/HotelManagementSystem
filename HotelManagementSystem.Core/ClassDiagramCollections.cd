@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HotelManagementSystem.Core.Service.SaveableCollection&lt;T&gt;">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAAAACAAAAAAAQBAAAAAAIAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Service\SaveableCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelManagementSystem.Core.Service.UserCollection" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\UserCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelManagementSystem.Core.Service.VisitorCollection" Collapsed="true">
+    <Position X="5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\VisitorCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelManagementSystem.Core.Service.VisitorInfoCollection" Collapsed="true">
+    <Position X="5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\VisitorInfoCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelManagementSystem.Core.Service.RoomCollection" Collapsed="true">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\RoomCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelManagementSystem.Core.Service.ManagerCollection" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\ManagerCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelManagementSystem.Core.Service.BookingCollection" Collapsed="true">
+    <Position X="8.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\BookingCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelManagementSystem.Core.Service.ManagerInfoCollection" Collapsed="true">
+    <Position X="11.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\ManagerInfoCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

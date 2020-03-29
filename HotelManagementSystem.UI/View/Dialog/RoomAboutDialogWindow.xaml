@@ -1,0 +1,50 @@
+﻿<Window x:Class="HotelManagementSystem.UI.View.Dialog.RoomAboutDialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelManagementSystem.UI.View.Dialog"
+        mc:Ignorable="d"
+        Title="Room"
+        Height="280"
+        Width="300"
+        MinHeight="280"
+        MinWidth="300"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner">
+
+    <Grid>
+        <StackPanel Margin="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Margin="0 0 10 0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Text="Number" />
+            <TextBlock VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Text="Price" />
+            <TextBlock VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Text="Type" />
+            <TextBlock VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" Text="Subtype" />
+            <TextBlock VerticalAlignment="Center" Grid.Column="0" Grid.Row="4" Text="Size" />
+            <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Number}" />
+            <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Price}" />
+                <ComboBox Grid.Column="1" Grid.Row="2" ItemsSource="{Binding RoomTypes}" SelectedItem="{Binding RoomType}"/>
+                <ComboBox Grid.Column="1" Grid.Row="3" ItemsSource="{Binding RoomSubtypes}" SelectedItem="{Binding RoomSubtype}" />
+            <TextBox Grid.Column="1" Grid.Row="4" Text="{Binding Size}" />
+            
+        </Grid>
+            <Button Margin="0 10 0 0" Grid.Column="0" Grid.Row="5" Command="{Binding OkCommand}">
+                <TextBlock Text="OK"/>
+            </Button>
+            <Button Margin="0 10 0 0" Grid.Column="1" Grid.Row="5" Command="{Binding CancelCommand}">
+                <TextBlock Text="Cancel"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
